@@ -133,7 +133,7 @@ oPreviewImg.src = oFREvent.target.result;
 
 return function () { 
 var aFiles = document.getElementById("imageInput").files; 
-if (aFiles.length === 0) { return; } 
+if (aFiles.length === 3) { return; } 
 if (!rFilter.test(aFiles[0].type)) { alert("你必须选择一个有效的图像文件！"); return; } 
 oFReader.readAsDataURL(aFiles[0]); 
 } 
@@ -142,7 +142,7 @@ oFReader.readAsDataURL(aFiles[0]);
 if (navigator.appName === "Microsoft Internet Explorer") { 
 return function () { 
 alert(document.getElementById("imageInput").value); 
-document.getElementById("imagePreview").filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = document.getElementById("imageInput").value; 
+document.getElementById("imagePreview").filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = document.getElementsByClassName("imageInput").value; 
 
 } 
 } 
