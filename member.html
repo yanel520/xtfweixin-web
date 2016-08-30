@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<meta content="telephone=no" name="format-detection">
+		<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+		<meta charset="utf-8" />
+		<script src="js/jquery.js"></script>
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="mui/css/mui.min.css" />
+		<link rel="stylesheet" href="iconfont/iconfont.css">
+		<link rel="stylesheet" href="js/alert/sweetalert.css">
+		<title>注册</title>
+	</head>
+
+	<body>
+		<!--个人中心header-->
+		<header><i onClick="window.history.go(-1)" class="icon-head icon iconfont">&#xe602;</i>个人中心
+		</header>
+		<!--个人信息-->
+		<section id="userContainer">
+		</section>
+		<script type="text/html" id="userTemplate">
+			<section class="member-photo">
+				<div class="member-photo-img">
+					<a href="#"><img src="images/20151024071652_jveK3.jpeg"></a>
+				</div>
+
+				<div class="member-photo-name">
+					<p>{{MERC_ABBR}}</p><span>(普通用户)</span><strong>{{PHONE}}</strong></div>
+			</section>
+		</script>
+
+		<!--个人中心分类列表-->
+		<div class="member-content">
+			<ul class="member-list">
+				<li>
+					<a href="myinformation.html"><i class="icon-l icon iconfont">&#xe603;</i> <span>我的信息</span> <i class="icon-r icon iconfont">&#xe605;</i></a>
+				</li>
+
+				<li>
+					<a href="#"><i class="icon-l icon iconfont">&#xe60b;</i> <span>关于我们</span> <i class="icon-r icon iconfont">&#xe605;</i></a>
+				</li>
+			</ul>
+		</div>
+		<!--固定的footer-->
+		<footer class="member-footer">
+			<ul>
+				<li>
+					<a onclick="receivables()"><i class="icon-f icon iconfont">&#xe60e;</i> 收款</a>
+				</li>
+				<li>
+					<a href="bill.html"><i class="icon-f icon iconfont">&#xe607;</i> 账单</a>
+				</li>
+				<li>
+					<a href="login.html"><i class="icon-f icon iconfont">&#xe609;</i> 我</a>
+				</li>
+
+			</ul>
+		</footer>
+
+		<script type="text/javascript" src="js/alert/sweetalert.min.js"></script>
+		<script type="text/javascript" src="js/template.js"></script>
+		<script type="text/javascript" src="js/member.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+	</body>
+
+</html>

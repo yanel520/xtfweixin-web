@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<meta content="telephone=no" name="format-detection">
+		<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+		<meta charset="utf-8" />
+		<script src="js/jquery.js"></script>
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="mui/css/mui.min.css" />
+		<link rel="stylesheet" href="iconfont/iconfont.css">
+		<link rel="stylesheet" href="js/alert/sweetalert.css">
+		<title>注册</title>
+	</head>
+
+	<body>
+		<!--header-->
+		<header><i onClick="window.history.go(-1)" class="icon-head icon iconfont">&#xe602;</i>登录
+		</header>
+		<!--登录主体内容-->
+		<div class="member-content">
+			<div id="member-tab"><b class="current">绑定已有账号</b><b>绑定新账号</b></div>
+			<div id="member-tab-cont">
+				<!--绑定已有账号-->
+				<ul class="member-login-cont" style="display: block;">
+					<form id="login_form" method="get" action="">
+						<li>
+							<i class="icon-l icon iconfont">&#xe606;</i><input class="login-text" type="tel" name="phone" id="phone" placeholder="手机" value="13682504072" />
+						</li>
+						<li>
+							<i class="icon-l icon iconfont">&#xe60f;</i><input class="login-text" type="password" placeholder="密码" name="pass" id="pass" value="123456" />
+						</li>
+						<input type="submit" class="btn btn-long btn-primary" value="确认" />
+					</form>
+				</ul>
+				<!--绑定新账号-->
+				<ul class="member-login-cont">
+					<form id="login_form2" method="get" action="">
+						<li>
+							<i class="icon-l icon iconfont">&#xe606;</i><input class="login-text" type="tel" name="reg_phone" id="reg_phone" placeholder="手机" value="" />
+						</li>
+						<li>
+							<i class="icon-l icon iconfont">&#xe610;</i><input class="login-codes" type="text" name="" id="msg_good" placeholder="手机验证码" value="" /><button onClick="sendMsg()" type="button" id="sendMsgBtn" class="btn btn-codes btn-primary" >发送验证码 </button>
+						</li>
+						<li>
+							<i class="icon-l icon iconfont">&#xe60f;</i><input class="login-text" type="password" name="reg_password" id="reg_password" placeholder="密码" value="" />
+						</li>
+						<li>
+							<i class="icon-l icon iconfont">&#xe60f;</i><input class="login-text" type="password" name="reg_confirm_password" id="reg_password" placeholder="确认密码" value="" />
+						</li>
+						<li>
+							<i class="icon-l icon iconfont">&#xe601;</i> 用户名
+						</li>
+						<input type="submit" class="btn btn-long btn-primary" value="确认" />
+					</form>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/alert/sweetalert.min.js"></script>
+		<script type="text/javascript" src="js/md5.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+		<script type="text/javascript" src="js/validate/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/validate/localization/messages_zh.min.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<script src="js/jquery.js"></script>
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="iconfont/iconfont.css">
+		<link rel="stylesheet" href="mui/css/mui.min.css" />
+		<link rel="stylesheet" href="js/alert/sweetalert.css">
+		<title>认证第三步</title>
+	</head>
+
+	<body>
+		<!--认证-->
+		<header><i onclick="window.history.go(-1)" class="icon-head icon iconfont">&#xe602;</i>认证第三步</header>
+
+		<div class="member-content">
+			<ul class="member-login-cont" style="display: block;">
+				<form id="ahth-three">
+
+					<li>
+						<i class="icon-l icon iconfont">&#xe619;</i><input class="login-text" type="text" name="BKNumver" id="BKNumver" placeholder="请输入您的银行卡号" value="" />
+					</li>
+					<li>
+						<i class="icon-l icon iconfont">&#xe619;</i><input class="login-text" type="text" name="confirm-BKNumber" id="BKNumber" placeholder="请再次输入您的银行卡号" value="" />
+					</li>
+					<li>
+						<i class="icon-l icon iconfont">&#xe606;</i><input class="login-text" type="tel" name="BK-phone" id="BK-phone" placeholder="银行预留手机号码" value="" />
+					</li>
+					<li>
+						<i class="icon-l icon iconfont">&#xe617;</i><input class="login-text" type="tel" name="OBK-name" id="OBK-name" placeholder="所属银行" value="" />
+					</li>
+					<li>
+						<i class="icon-l icon iconfont">&#xe615;</i><input class="login-text" type="tel" name="Bank" id="Bank" placeholder="请填写开户行" value="" />
+					</li>
+				</form>
+			</ul>
+
+			<input type="submit" value="提交" class="btn btn-long btn-primary">
+		</div>
+		<script type="text/javascript" src="js/alert/sweetalert.min.js"></script>
+		<script type="text/javascript" src="js/Authenticate-three.js"></script>
+		<script type="text/javascript" src="js/validate/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/validate/localization/messages_zh.min.js"></script>
+	</body>
+
+</html>

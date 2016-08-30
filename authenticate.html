@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<meta content="telephone=no" name="format-detection">
+		<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+		<script src="js/jquery.js"></script>
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="mui/js/mui.min.js"></script>
+		<link rel="stylesheet" href="mui/css/mui.min.css" />
+		<link rel="stylesheet" href="iconfont/iconfont.css">
+		<link rel="stylesheet" href="js/alert/sweetalert.css">
+		<title>认证第一步</title>
+	</head>
+
+	<body>
+		<!--认证-->
+		<header><i onClick="window.history.go(-1)" class="icon-head icon iconfont">&#xe602;</i>认证</header>
+
+		<div class="member-content">
+			<form id="auth-form1">
+				<ul class="member-login-cont" style="display: block;">
+
+					<li>
+						<i class="icon-l icon iconfont">&#xe601;</i><input class="login-text" type="text" name="auth-name" id="auth-name" placeholder="请输入法人姓名" value="刘艳元" />
+					</li>
+					<li>
+						<i class="icon-l icon iconfont">&#xe60a;</i><input class="login-text" type="text" name="auth-idnumber" id="auth-idnumber" placeholder="430521199001034262" value="" />
+					</li>
+					<li>
+						<i class="icon-l icon iconfont">&#xe60b;</i><input type="checkbox" name="auth-checked" id="auth-checkbox" checked="checked" /> <span class="checkbox-a" id="auth-modelname">0.45%</span>
+					</li>
+
+					<li>
+						<i class="icon-l icon iconfont">&#xe611;</i><input class="login-text" type="email" name="auth-email" id="auth-email" placeholder="请输入电子邮箱" value="631795624@qq.com" />
+					</li>
+					<li>
+						<i class="icon-l icon iconfont">&#xe601;</i><input class="login-text" type="tel" name="auth-remcode" id="auth-remcode" placeholder="推荐码" value="10023" />
+					</li>
+
+				</ul>
+
+				<ul class="member-authen">
+
+					<li>
+						<p>请拍摄身份证正面<span>未上传</span></p>
+						<input type="file" id="inp" accept="image/*;" capture="camera" />
+						<i class="icon-r icon iconfont">&#xe605;</i>
+					</li>
+					<li>
+						<p>请拍摄身份证反面<span>未上传</span></p>
+						<input type="file" id="inp" accept="image/*;" capture="camera" />
+						<i class="icon-r icon iconfont">&#xe605;</i>
+					</li>
+					<li>
+						<p>手持身份证拍照上传<span>未上传</span></p>
+						<img src="images/shouchisfz.png" /><i class="icon-r icon iconfont">&#xe605;</i>
+						<div class="member-authen-bot"><i class="icon iconfont">&#xe600;</i>二代身份证上传要求：手持的身份证号码清晰，并且能看到手持人清晰的上半身照片</div>
+					</li>
+				</ul>
+				<input type="submit" class="btn btn-long btn-primary" value="下一步">
+			</form>
+		</div>
+
+		<script type="text/javascript" src="js/Authenticate.js"></script>
+		<script type="text/javascript" src="js/validate/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/validate/localization/messages_zh.min.js"></script>
+
+	</body>
+
+</html>

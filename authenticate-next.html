@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script src="js/jquery.js"></script>
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="iconfont/iconfont.css">
+		<script src="mui/js/mui.min.js"></script>
+		<script src="mui/js/mui.picker.js"></script>
+		<script src="mui/js/mui.poppicker.js"></script>
+		<script src="mui/js/city.data.js"></script>
+		<link rel="stylesheet" href="mui/css/mui.min.css" />
+		<link href="mui/css/mui.picker.css" rel="stylesheet" />
+		<link href="mui/css/mui.poppicker.css" rel="stylesheet" />
+		<link rel="stylesheet" href="js/alert/sweetalert.css">
+		<title>认证第二步</title>
+		<style type="text/css">
+			#imagePreview {
+				width: 10rem;
+				height: 6rem;
+				filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale);
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!--认证-->
+		<header><i onClick="window.history.go(-1)" class="icon-head icon iconfont">&#xe602;</i>认证第二步</header>
+
+		<div class="member-content">
+			<form id="auth-form2">
+				<ul class="member-login-cont" style="display: block;">
+
+					<li>
+						<i class="icon-l icon iconfont">&#xe613;</i><input class="login-text" type="text" name="auth-stores" id="auth-stores" placeholder="请输入您的商户名称" value="" />
+					</li>
+
+					<li id="showCityPicker3">
+						<i class="icon-l icon iconfont">&#xe618;</i><input class="login-text" id="cityResult3" type="text" name="auth-provinces" value="请选择所在地区" /></button>
+					</li>
+
+					<li>
+						<i class="icon-l icon iconfont">&#xe612;</i><input class="login-text" type="address" name="auth-address" id="auth-address" placeholder="请输入您的经营地址" value="" />
+					</li>
+
+				</ul>
+
+				<ul class="member-authen">
+
+					<li>
+						<p>银行卡正面拍照上传<span>未上传</span></p>
+						<i class="icon-r icon iconfont">&#xe605;</i>
+						<input id="imageInput" type="file" name="myPhoto" onChange="loadImageFile();" />
+						<div id="imagePreview"> </div>
+					</li>
+
+					<li>
+						<p>银行卡反面拍照上传<span>未上传</span></p>
+						<i class="icon-r icon iconfont">&#xe605;</i>
+						<input id="imageInput" type="file" name="myPhoto" onChange="loadImageFile();" />
+						<div id="imagePreview"> </div>
+					</li>
+
+					<li>
+						<p class="photo-zhen">请拍摄经营场所证明如下：营业执照 或 租赁合同 或 手持信用卡照片<span>未上传</span></p>
+						<i class="icon-r icon iconfont">&#xe605;</i>
+						<input id="imageInput" type="file" name="myPhoto" onChange="loadImageFile();" />
+						<div id="imagePreview"> </div>
+						
+					</li>
+
+				</ul>
+
+				<input type="submit" class="btn btn-long btn-primary" value="下一步">
+			</form>
+		</div>
+		<script type="text/javascript" src="js/alert/sweetalert.min.js"></script>
+		<script type="text/javascript" src="js/Authenticate-two.js"></script>
+		<script type="text/javascript" src="js/validate/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/validate/localization/messages_zh.min.js"></script>
+
+	</body>
+
+</html>
